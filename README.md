@@ -57,3 +57,47 @@ As etapas para solucionar o problema de negócio foram as seguintes:
    - Entendimento.
 4. Exploração de dados.
 
+## Insights Principais
+
+### Insights mais relevantes para o projeto:
+
+1. **Imóveis renovados recentemente são 35% mais caros**
+   - **Falso:** Imóveis antigos e atuais possuem uma faixa de preço equivalente.
+
+2. **Imóveis em más condições, mas com uma boa vista são 10% mais caros**
+   - **Falso:** Imóveis em más condições e com vista ruim são mais caros.
+
+3. **Crescimento do preço mês após mês em 2014 é de 10%**
+   - **Falso:** O preço dos imóveis são mais caros entre o mês 3 e 6.
+
+# Tradução para o Negócio
+
+### O que as análises das hipóteses dizem sobre o negócio:
+
+| Hipótese | Resultado | Tradução para o Negócio |
+|----------|-----------|-------------------------|
+| H1 - Imóveis com vista para a água são em média 30% mais caros | Verdadeira | Investir em imóveis com vista para água |
+| H2 - Imóveis com data de construção menor que 1955 são em média 50% mais baratos | Falsa | Investir em imóveis independente da data de construção |
+| H3 - Imóveis sem porão com maior área total são 40% mais caros | Verdadeira | Investir em imóveis sem porão |
+| H4 - Imóveis que nunca foram reformados são em média 20% mais baratos | Verdadeira | Investir em imóveis não reformados e reformá-los para venda |
+| H5 - Imóveis em más condições, mas com boa vista são 10% mais caros | Falsa | Não investir em imóveis em más condições |
+| H6 - Imóveis antigos e não renovados são 40% mais baratos | Verdadeira | Investir em imóveis antigos e não renovados e reformá-los para venda |
+| H7 - Imóveis com mais banheiros são em média 5% mais caros | Falsa | Investir em imóveis de 3-5 banheiros |
+| H8 - Imóveis renovados recentemente são 35% mais caros | Falsa | Investir em imóveis independente da reforma |
+| H9 - O crescimento do preço dos imóveis mês após mês no ano de 2014 é de 10% | Falsa | Investir em imóveis nos meses de menor custo |
+| H10 - Imóveis com 3 banheiros têm um crescimento mês após mês de 15% | Falsa | Investir em imóveis nos meses de menor custo |
+
+**O valor total de lucro (lucro = preço de compra - preço de venda) dos imóveis é de: $22.623.548,20**
+
+# Conclusão
+
+O objetivo final deste projeto era responder a duas questões principais:
+
+1. Quais casas o CEO da House Rocket deveria comprar e por qual preço de compra?
+2. Uma vez a casa em posse da empresa, qual o melhor momento para vendê-las e qual seria o preço da venda?
+
+Os objetivos foram alcançados. Os imóveis foram agrupados por região (zipcode). Considerando o preço do imóvel e a condição (1 - 5), foi calculada a mediana do preço. Imóveis abaixo do preço da mediana e com melhores condições foram sugeridos para compra (total de 151 imóveis). Os imóveis aptos para compra foram agrupados pela localidade e a estação do ano. A mediana foi calculada e imóveis com preço abaixo da mediana tiveram um acréscimo de 10% em seu valor, enquanto imóveis com preço acima da mediana tiveram um acréscimo de 30% acima do seu valor. O melhor momento para a venda dos imóveis é na primavera, uma vez que o preço é maior nessa época.
+
+Como próximo passo, seria interessante a análise de quais apartamentos deveriam sofrer reformas, uma vez que imóveis antigos e não reformados são mais baratos, enquanto imóveis renovados recentemente são mais caros. Também é de interesse prever a valorização do imóvel, pois pode permitir reter a venda da habitação até esta estar mais valorizada no mercado.
+
+
